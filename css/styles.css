@@ -1,0 +1,242 @@
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-blue {
+    background: #fff;
+}
+
+.logo {
+    display: block;
+}
+
+.logo>img {
+    width: 14.5em;
+    display: block;
+    margin: auto;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 60%;
+}
+
+.images {
+    height: 60% !important;
+}
+
+.programme {
+    position: relative;
+    bottom: 30em !important;
+}
+
+.programme>div {
+    margin-left: 350px;
+    margin-right: 550px;
+}
+
+.prog-title {
+    font-size: 6em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.prog-content {}
+
+.prog-content>div {
+    display: flex;
+    margin-top: 5px;
+    width: 600px;
+}
+
+.affichage-prog-mobile {
+    display: none;
+}
+
+.prog-content>div>span {
+    background-color: #fff;
+    color: #4EBCC9 !important;
+    font-size: 23px;
+    padding: 5px;
+    padding-left: 100px;
+    margin-right: 10px;
+    width: 195px;
+    text-align: left;
+}
+
+.prog-content>div>p {
+    padding: 5px;
+    color: #fff !important;
+    font-size: 23px;
+}
+
+.padding-menu {
+    padding: 150px;
+}
+
+.carousel-caption {
+    position: absolute;
+    /*right: 15%;
+    bottom: 155px;
+    left: 15%;*/
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.margin {
+    margin-top: 4em;
+}
+
+.bordure-top {
+    background-color: #29ABE2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.input-text {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    text-align: end;
+}
+
+.form-control {
+    border: 1.5px solid black;
+    border-radius: 0px;
+}
+
+.bordure-bottom {
+    background-color: #29ABE2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.package {
+    border-radius: 10px;
+    background-color: #FBB03B;
+    text-align: left;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    min-height: 160px;
+}
+
+.package-standard {
+    min-height: auto !important;
+}
+
+.package ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 1018px) {
+    .programme {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .d-none {
+        display: none !important;
+    }
+    .affichage-prog-mobile {
+        display: block;
+        position: relative;
+        z-index: 999;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .affichage-prog-mobile>div {
+        display: block;
+        padding: 10px;
+    }
+    .prog-content-mobile>div {
+        display: flex;
+    }
+    .prog-content-mobile>div>span {
+        background-color: #eee;
+        display: block;
+        color: #4EBCC9 !important;
+        font-size: 20px;
+        padding: 5px;
+        margin-right: 10px;
+        width: 150px !important;
+        text-align: left;
+    }
+    .prog-content-mobile>div>p {
+        padding: 5px;
+        font-size: 20px;
+        color: black !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .input-text {
+        display: inherit;
+        text-align: right !important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .affichage-prog-mobile>div {
+        display: block;
+        padding: 15px;
+    }
+    .prog-content-mobile>div>span {
+        background-color: #eee;
+        display: block;
+        color: #4EBCC9 !important;
+        font-size: 10px;
+        padding: 5px;
+        margin-right: 10px;
+        width: 120px !important;
+        text-align: left;
+    }
+    .prog-content-mobile>div>p {
+        padding: 5px;
+        font-size: 10px;
+        color: black !important;
+    }
+}
